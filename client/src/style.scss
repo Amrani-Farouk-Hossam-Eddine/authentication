@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  h1,
+  p,
+  h3,
+  h2 {
+    margin: 0;
+  }
+}
+$lightGreen: #b9e7e7;
+
+.app {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .auth {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightGreen;
+
+      h1 {
+        color: teal;
+        font-size: 50px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+        background-color: white;
+        width: 300px;
+
+        input {
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid lightgray;
+        }
+
+        p {
+          font-size: 14px;
+          color: red;
+          text-align: center;
+        }
+
+        button {
+          padding: 10px;
+          background-color: teal;
+          color: white;
+          font-size: 16px;
+          border: none;
+        }
+
+        span {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    // profiel
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightGreen;
+
+      .info {
+        padding: 20px;
+        background-color: white;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        .username {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          p {
+            font-weight: bold;
+            font-size: 28px;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+        .email {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          p {
+            font-weight: bold;
+            font-size: 28px;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
